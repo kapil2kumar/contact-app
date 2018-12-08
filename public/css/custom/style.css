@@ -1,0 +1,19 @@
+
+    p {
+        text-align: left;
+    }
+
+    a:link {
+      text-decoration: none;
+      /*color: #333;*/
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .well {
+      min-height: 100px;
+    }

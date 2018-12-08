@@ -1,0 +1,29 @@
+<div class="container-fluid bg-3 text-center">  
+  <a href="#/">Back</a>  
+  <div class="row">
+
+    <div class="table-responsive">          
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Sent On</th>
+            <th>OTP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="message in messageList track by $index | orderBy:'-createOn'">
+            <td>{{message.firstName}} {{message.lastName}}</td>
+            <td>{{message.createOn*1000 | date : 'dd-MMM-yyyy hh:mm:ss a'}}</td>
+            <td>{{message.otp}}</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    
+  </div>
+
+  
+
+<br><br>
+</div>
